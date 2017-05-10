@@ -20,6 +20,57 @@
   </annotation>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      label="Spring Tool Suite (STS) for Eclipse">
+    <requirement
+        name="org.springsource.ide.eclipse.commons.quicksearch.feature.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springsource.ide.eclipse.dashboard.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.aeri.feature.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.ajdt.feature.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.aop.feature.source.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.autowire.feature.source.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.batch.feature.source.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.boot.dash.feature.source.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.feature.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.integration.feature.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.maven.feature.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.mylyn.feature.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.security.feature.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.data.feature.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <requirement
+        name="org.springframework.ide.eclipse.webflow.feature.source.feature.group"
+        versionRange="[3.8.0,4.0.0)"/>
+    <repository
+        url="http://dist.springsource.com/release/TOOLS/update/e4.6/"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       label="Java Code Coverage for Eclipse">
     <requirement
         name="com.mountainminds.eclemma.feature.feature.group"

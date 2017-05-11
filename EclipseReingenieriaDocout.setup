@@ -123,12 +123,10 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
-      label="Mylyn Gitlab Connector">
+      label="Eclipse Mylyn to GitHub connector">
     <requirement
-        name="de.weingardt.mylyn.gitlab.feature.group"
-        versionRange="[1.4.0,2.0.0)"/>
-    <repository
-        url="http://pweingardt.github.com/mylyn-gitlab"/>
+        name="org.eclipse.mylyn.github.feature.feature.group"
+        versionRange="[4.6.0,5.0.0)"/>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
@@ -139,6 +137,21 @@
     <repository
         url="https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/"/>
   </setupTask>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
+      option="-Xmx"
+      value="2048m"
+      vm="true"/>
+  <setupTask
+      xsi:type="setup:VariableTask"
+      name="product.location"
+      value="${installation.location/}${installation.relativeProductFolder}"/>
+  <setupTask
+      xsi:type="setup:ResourceCreationTask"
+      excludedTriggers="STARTUP MANUAL"
+      filter="(osgi.os=linux)"
+      content="[Desktop Entry]&#xA;Type=Application&#xA;Name=${scope.product.label} - ${scope.product.version.label}&#xA;Exec=${product.location/}eclipse&#xA;Icon=${product.location/}icon.xpm&#xA;Terminal=false&#xA;Categories=Development;IDE;"
+      targetURL="${product.location|uri}/eclipse.desktop"/>
   <setupTask
       xsi:type="setup:CompoundTask"
       name="User Preferences">
@@ -803,21 +816,6 @@
           value="$${srcProject}"/>
     </setupTask>
   </setupTask>
-  <setupTask
-      xsi:type="setup:EclipseIniTask"
-      option="-Xmx"
-      value="2048m"
-      vm="true"/>
-  <setupTask
-      xsi:type="setup:VariableTask"
-      name="product.location"
-      value="${installation.location/}${installation.relativeProductFolder}"/>
-  <setupTask
-      xsi:type="setup:ResourceCreationTask"
-      excludedTriggers="STARTUP MANUAL"
-      filter="(osgi.os=linux)"
-      content="[Desktop Entry]&#xA;Type=Application&#xA;Name=${scope.product.label} - ${scope.product.version.label}&#xA;Exec=${product.location/}eclipse&#xA;Icon=${product.location/}icon.xpm&#xA;Terminal=false&#xA;Categories=Development;IDE;"
-      targetURL="${product.location|uri}/eclipse.desktop"/>
   <version name="neon"
       label="Neon"
       requiredJavaVersion="1.8">

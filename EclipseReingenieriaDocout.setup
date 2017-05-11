@@ -832,10 +832,6 @@
           name="org.eclipse.rcp.feature.group"
           versionRange="[4.6.0,4.7.0)"/>
       <requirement
-          name="org.eclipse.cft.server.core.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.cft.server.ui.feature.feature.group"/>
-      <requirement
           name="org.eclipse.datatools.common.doc.user.feature.group"/>
       <requirement
           name="org.eclipse.datatools.connectivity.doc.user.feature.group"/>
@@ -874,8 +870,6 @@
       <requirement
           name="org.eclipse.jpt.jpa.feature.feature.group"/>
       <requirement
-          name="org.eclipse.jsf.feature.feature.group"/>
-      <requirement
           name="org.eclipse.jst.common.fproj.enablement.jdt.feature.group"/>
       <requirement
           name="org.eclipse.jst.enterprise_ui.feature.feature.group"/>
@@ -910,10 +904,6 @@
       <requirement
           name="org.eclipse.m2e.wtp.jpa.feature.feature.group"/>
       <requirement
-          name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
-      <requirement
           name="org.eclipse.mylyn.context_feature.feature.group"/>
       <requirement
           name="org.eclipse.mylyn.ide_feature.feature.group"/>
@@ -929,12 +919,6 @@
           name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
       <requirement
           name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.rse.feature.group"/>
-      <requirement
-          name="org.eclipse.rse.useractions.feature.group"/>
-      <requirement
-          name="org.eclipse.tm.terminal.feature.feature.group"/>
       <requirement
           name="org.eclipse.wst.common.fproj.feature.group"/>
       <requirement
@@ -1932,14 +1916,6 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.team.ui/org.eclipse.team.ui.view_syncinfo_in_label"
             value="true"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup:CompoundTask"
-          name="org.eclipse.tm.terminal.view.ui">
-        <setupTask
-            xsi:type="setup:PreferenceTask"
-            key="/instance/org.eclipse.tm.terminal.view.ui/terminals.localTerminalInitialCwd"
-            value="eclipsews"/>
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"

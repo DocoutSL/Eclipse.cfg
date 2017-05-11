@@ -766,6 +766,42 @@
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
+        name="org.eclipse.ajdt.ui">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ajdt.ui/org.aspectj.ajdt.core.compiler.lint.BrokeSerialVersionCompatibility"
+          value="warning"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ajdt.ui/org.aspectj.ajdt.core.compiler.lint.calculatingSerialVersionUID"
+          value="warning"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ajdt.ui/org.aspectj.ajdt.core.compiler.lint.cantMatchArrayTypeOnVarargs"
+          value="warning"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ajdt.ui/org.aspectj.ajdt.core.compiler.lint.NeedSerialVersionUIDField"
+          value="warning"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ajdt.ui/org.aspectj.ajdt.core.compiler.lint.swallowedExceptionInCatchBlock"
+          value="warning"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ajdt.ui/org.aspectj.ajdt.core.compiler.lint.unorderedAdviceAtShadow"
+          value="warning"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ajdt.ui/org.aspectj.ajdt.core.compiler.lint.WildcardTypeName"
+          value="warning"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ajdt.ui/org.aspectj.ajdt.core.complier.lint.aspectExcludedByConfiguration"
+          value="warning"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
         name="org.eclipse.mylyn.monitor.ui">
       <setupTask
           xsi:type="setup:PreferenceTask"
@@ -807,6 +843,134 @@
           xsi:type="setup:PreferenceTask"
           key="/instance/org.moreunit.core/org.moreunit.core.anyLanguage.testFolderPathTemplate"
           value="$${srcProject}"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.springframework.ide.eclipse.beans.core">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/aop"
+          value="aop"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/beans"
+          value="beans"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/c"
+          value="c"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/cache"
+          value="cache"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/context"
+          value="context"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/data/jpa"
+          value="jpa"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/data/mongo"
+          value="mongo"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/data/repository"
+          value="repository"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/flex"
+          value="flex"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/jdbc"
+          value="jdbc"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/jee"
+          value="jee"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/jms"
+          value="jms"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/lang"
+          value="lang"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/mvc"
+          value="mvc"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/oxm"
+          value="oxm"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/p"
+          value="p"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/security"
+          value="sec"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/task"
+          value="task"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/tx"
+          value="tx"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/util"
+          value="util"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.core//prefix.http://www.springframework.org/schema/web-services"
+          value="ws"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.springframework.ide.eclipse.beans.ui.editor">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.beans.ui.editor/org.springframework.ide.eclipse.beans.ui.editor.templates"
+          value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;templates/>"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.springframework.ide.eclipse.boot">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.boot/installs"
+          value="http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.5.2.RELEASE/spring-boot-cli-1.5.2.RELEASE-bin.zip\;Boot 1.5.2.RELEASE\;;"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.boot/org.springframework.ide.eclipse.boot.wizard.initializr.url"
+          value="http://start.spring.io&#xA;"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.springframework.ide.eclipse.core">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.core/org.springframework.ide.eclipse.core.useChangeDetectionForJavaFiles"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.core/org.springframework.ide.eclipse.core.useNonLockingClassLoader"
+          value="false"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.core/org.springframework.ide.eclipse.core.validator.enable.org.springframework.ide.eclipse.core.springvalidator"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.springframework.ide.eclipse.core/org.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.core.springClasspath-org.springframework.ide.eclipse.core.springvalidator"
+          value="true"/>
     </setupTask>
   </setupTask>
   <version name="neon"
@@ -936,6 +1100,14 @@
     <setupTask
         xsi:type="setup:CompoundTask"
         name="User Preferences">
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="org.dadacoalition.yedit">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.dadacoalition.yedit/formatterLineWidth"
+            value="100"/>
+      </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
           name="org.eclipse.compare">
@@ -1107,6 +1279,10 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.codeComplete.argumentSuffixes"
             value=""/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.codeComplete.deprecationCheck"
+            value="enabled"/>
         <setupTask
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.codeComplete.fieldPrefixes"
@@ -1447,6 +1623,10 @@
       <setupTask
           xsi:type="setup:CompoundTask"
           name="org.eclipse.jdt.ui">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.jdt.ui/content_assist_autoactivation_delay"
+            value="0"/>
         <setupTask
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/content_assist_favorite_static_members"
@@ -1810,6 +1990,26 @@
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
+          name="org.eclipse.jpt.core">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.jpt.core/entitygen.DEFAULT_PACKAGE"
+            value="model"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.jpt.core/jpqlIdentifier.CASE"
+            value="lowercase"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.jpt.core/jpqlIdentifier.MATCH_FIRST_CHARACTER_CASE"
+            value="true"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.jpt.core/jpqlQueryEditorNumberOfLines"
+            value="5"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
           name="org.eclipse.m2e.core">
         <setupTask
             xsi:type="setup:PreferenceTask"
@@ -1919,6 +2119,30 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.ui/SHOW_MEMORY_MONITOR"
             value="true"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="org.eclipse.ui.workbench">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.antDevelopment"
+            value="false"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.wtp.javascript.capabilities"
+            value="false"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.ui.workbench/REUSE_DIRTY_EDITORS"
+            value="false"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.ui.workbench/REUSE_OPEN_EDITORS_BOOLEAN"
+            value="true"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.ui.workbench/resourcetypes"
+            value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editors version=&quot;3.1&quot;>&#xD;&#xA;&lt;info extension=&quot;java&quot; name=&quot;*&quot;>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor&quot;/>&#xD;&#xA;&lt;/info>&#xA;&lt;info extension=&quot;yaml&quot; name=&quot;*&quot;>&#xD;&#xA;&lt;editor id=&quot;org.dadacoalition.yedit.editor.YEdit&quot;/>&#xD;&#xA;&lt;/info>&#xA;&lt;info extension=&quot;yml&quot; name=&quot;*&quot;>&#xD;&#xA;&lt;editor id=&quot;org.dadacoalition.yedit.editor.YEdit&quot;/>&#xD;&#xA;&lt;/info>&#xA;&lt;info extension=&quot;exec&quot; name=&quot;*&quot;>&#xD;&#xA;&lt;editor id=&quot;com.mountainminds.eclemma.ui.editors.executiondata&quot;/>&#xD;&#xA;&lt;/info>&#xA;&lt;info extension=&quot;aj&quot; name=&quot;*&quot;>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor&quot;/>&#xD;&#xA;&lt;defaultEditor id=&quot;org.eclipse.ajdt.internal.ui.editor.CompilationUnitEditor&quot;/>&#xD;&#xA;&lt;/info>&#xD;&#xA;&lt;/editors>"/>
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
@@ -2154,6 +2378,14 @@
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
+          name="org.eclipse.wst.sse.core">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.sse.core/task-tags/enabled"
+            value="true"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
           name="org.eclipse.wst.sse.ui">
         <setupTask
             xsi:type="setup:PreferenceTask"
@@ -2163,6 +2395,78 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.wst.sse.ui/hoverModifiers"
             value="combinationHover|true|0;problemHover|false|0;documentationHover|false|0;annotationHover|true|Shift;"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="org.eclipse.wst.xsl.ui">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.ui/org.eclipse.wst.xsl.ui.custom_templates"
+            value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;templates/>"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="org.eclipse.wst.xsl.core">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/CHECK_CALL_TEMPLATES"
+            value="2"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/CHECK_XPATHS"
+            value="2"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/CIRCULAR_REF"
+            value="2"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/DUPLICATE_PARAMETER"
+            value="2"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/EMPTY_PARAM"
+            value="1"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/MAX_ERRORS"
+            value="100"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/MISSING_INCLUDE"
+            value="2"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/MISSING_PARAM"
+            value="1"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/NAME_ATTRIBUTE_EMPTY"
+            value="2"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/NAME_ATTRIBUTE_MISSING"
+            value="2"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xsl.core/TEMPLATE_CONFLICT"
+            value="2"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="org.eclipse.wst.xml.core">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xml.core/indentationSize"
+            value="2"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="org.eclipse.wst.xml.xpath.ui">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xml.xpath.ui/org.eclipse.wst.xml.xpath.ui.xpath_custom_templates"
+            value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;templates/>"/>
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
@@ -2207,6 +2511,14 @@
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.wst.validation/vf.version"
             value="3"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="org.eclipse.wst.sse.core">
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.sse.core/task-tags/enabled"
+            value="true"/>
       </setupTask>
     </setupTask>
     <description>Eclipse para Docout for Neon.</description>

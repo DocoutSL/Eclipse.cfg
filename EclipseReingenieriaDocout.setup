@@ -123,13 +123,6 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
-      label="Eclipse Mylyn to GitHub connector">
-    <requirement
-        name="org.eclipse.mylyn.github.feature.feature.group"
-        versionRange="[4.6.0,5.0.0)"/>
-  </setupTask>
-  <setupTask
-      xsi:type="setup.p2:P2Task"
       label="GFM Viewer">
     <requirement
         name="code.satyagraha.gfm.viewer.feature.feature.group"
@@ -933,6 +926,8 @@
           name="org.eclipse.wst.xml_ui.feature.feature.group"/>
       <requirement
           name="org.eclipse.wst.xsl.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.github.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/technology/epp/packages/neon"/>
       <repository

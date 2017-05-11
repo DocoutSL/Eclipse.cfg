@@ -27,4 +27,4 @@ El proceso de instalación es muy sencillo al estar prácticamente automatizado 
 1. En cada inicio de Eclipse su configuración será sincronizada con la del repositorio, por lo que es conveniente reiniciarlo seleccionando la opción `Restart` del menú `File`.
 1. Después de este reinicio Eclipse estará completamente instalado y configurado y listo para trabajar.
 
-Cualquier incidencia, sugerencia o idea requerirá la apertura del [*issue*](/../issues) correspondiente para posibilitar el seguimiento de las mismas.
+Cualquier incidencia, sugerencia o idea requerirá la apertura del [*issue*](/../../issues) correspondiente para posibilitar el seguimiento de las mismas.

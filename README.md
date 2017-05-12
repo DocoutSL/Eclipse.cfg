@@ -18,7 +18,7 @@ El proceso de instalación es muy sencillo al estar prácticamente automatizado 
       ![](img/image13.png)
 1. y seleccionar `Advanced Mode...`
 1. El instalador muestra los catálogos conocidos junto con los productos de cada catálogo. Dado que nuestro producto no es oficial es necesario añadirlo como un producto de usuario. Para ello es necesario pulsar sobre el botón con un signo más verde presente debajo del logo de Oomph.
-1. En la ventana que aparece hemos de introducir la URI del producto que deseamos instalar, en nuestro caso `https://gitlab.com/Docout.cfgs/Eclipse/raw/master/EclipseReingenieriaDocout.setup` y pulsar el botón `OK`.
+1. En la ventana que aparece hemos de introducir la URI del producto que deseamos instalar, en nuestro caso `https://raw.githubusercontent.com/DocoutSL/Eclipse.cfg/master/EclipseReingenieriaDocout.setup` y pulsar el botón `OK`.
 1. Se añadirá y seleccionará el producto `Eclipse para el departamento de Reingenieria de Docout`. Pulsar sobre el botón `Next >`.
 1. Pulsar nuevamente sobre el botón `Next >` sin seleccionar ningún proyecto.
 1. En la siguiente pantalla, introducir la carpeta raíz de instalación y el nombre de carpeta en la que se va a instalar Eclipse y pulsar el botón `Next >`.

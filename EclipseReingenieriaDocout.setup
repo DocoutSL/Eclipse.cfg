@@ -2477,8 +2477,16 @@
           name="org.eclipse.wst.xml.core">
         <setupTask
             xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xml.core/indentationChar"
+            value="space"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.wst.xml.core/indentationSize"
             value="2"/>
+        <setupTask
+            xsi:type="setup:PreferenceTask"
+            key="/instance/org.eclipse.wst.xml.core/preserveCDATAContent"
+            value="true"/>
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"

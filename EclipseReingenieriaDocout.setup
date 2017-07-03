@@ -73,7 +73,7 @@
       xsi:type="setup.p2:P2Task"
       label="Java Code Coverage for Eclipse">
     <requirement
-        name="com.mountainminds.eclemma.feature.feature.group"
+        name="org.eclipse.eclemma.feature.feature.group"
         versionRange="[3.0.0,4.0.0)"/>
     <repository
         url="http://update.eclemma.org/"/>
@@ -150,10 +150,10 @@
       name="User Preferences">
     <setupTask
         xsi:type="setup:CompoundTask"
-        name="com.mountainminds.eclemma.ui">
+        name="org.eclipse.eclemma.ui">
       <setupTask
           xsi:type="setup:PreferenceTask"
-          key="/instance/com.mountainminds.eclemma.ui/com.mountainminds.eclemma.ui.auto_remove_sessions"
+          key="/instance/org.eclipse.eclemma.ui/org.eclipse.eclemma.ui.auto_remove_sessions"
           value="true"/>
     </setupTask>
     <setupTask

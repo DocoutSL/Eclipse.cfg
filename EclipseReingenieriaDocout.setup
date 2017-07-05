@@ -1690,7 +1690,7 @@
         <setupTask
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.importorder"
-            value="java;javax;org;com;"/>
+            value="com;es.docout;java;javax;org;"/>
         <setupTask
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.javadoc"

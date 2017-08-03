@@ -84,7 +84,7 @@
       label="Eclipse Checkstyle Plugin">
     <requirement
         name="net.sf.eclipsecs.feature.group"
-        versionRange="[7.6.0,8.0.0)"/>
+        versionRange="[8.0.0,9.0.0)"/>
     <repository
         url="http://eclipse-cs.sourceforge.net/update/"/>
   </setupTask>

@@ -84,7 +84,8 @@
       label="Eclipse Checkstyle Plugin">
     <requirement
         name="net.sf.eclipsecs.feature.group"
-        versionRange="[8.0.0,9.0.0)"/>
+        versionRange="[8.0.0,9.0.0)"
+        optional="true"/>
     <repository
         url="http://eclipse-cs.sourceforge.net/update/"/>
   </setupTask>
@@ -93,7 +94,8 @@
       label="FindBugs Eclipse plugin">
     <requirement
         name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"
-        versionRange="[3.0.0,4.0.0)"/>
+        versionRange="[3.0.0,4.0.0)"
+        optional="true"/>
     <repository
         url="http://findbugs.cs.umd.edu/eclipse/"/>
   </setupTask>

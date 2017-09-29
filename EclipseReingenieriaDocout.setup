@@ -81,38 +81,12 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
-      disabled="true"
-      label="Eclipse Checkstyle Plugin">
-    <requirement
-        name="net.sf.eclipsecs.feature.group"
-        versionRange="[8.0.0,9.0.0)"/>
-    <repository
-        url="http://eclipse-cs.sourceforge.net/update/"/>
-  </setupTask>
-  <setupTask
-      xsi:type="setup.p2:P2Task"
       label="FindBugs Eclipse plugin">
     <requirement
         name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"
         versionRange="[3.0.0,4.0.0)"/>
     <repository
         url="http://findbugs.cs.umd.edu/eclipse/"/>
-  </setupTask>
-  <setupTask
-      xsi:type="setup.p2:P2Task"
-      disabled="true"
-      label="MoreUnit">
-    <requirement
-        name="org.moreunit.feature.group"
-        versionRange="[3.1.0,4.0.0)"/>
-    <requirement
-        name="org.moreunit.mock.feature.group"
-        versionRange="[3.1.0,4.0.0)"/>
-    <requirement
-        name="org.moreunit.light.feature.group"
-        versionRange="[3.1.0,4.0.0)"/>
-    <repository
-        url="http://moreunit.sourceforge.net/update-site/"/>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
